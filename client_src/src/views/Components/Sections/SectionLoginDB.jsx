@@ -19,7 +19,8 @@ import Button from "components/CustomButtons/Button.jsx";
 
 import loginStyle from "assets/jss/material-kit-react/views/componentsSections/loginStyle.jsx";
 // import { Link } from "react-router-dom";
-import SectionItem from './SectionItem'
+import SectionItem from './SectionItem';
+import { Link } from "react-router-dom";
 
 
 class SectionLoginDB extends React.Component {
@@ -66,7 +67,7 @@ class SectionLoginDB extends React.Component {
                     <div className={classes.socialLine}>
                       <Button
                         justIcon
-                        href="#pablo"
+                        href="https://twitter.com/Michael60406406"
                         target="_blank"
                         color="transparent"
                         onClick={e => e.preventDefault()}
@@ -152,11 +153,11 @@ class SectionLoginDB extends React.Component {
                     /> */}
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    {/* <link href="./" className={classes.link}> */}
-                    <Button simple color="danger" size="lg">
+                    <Link to={"/login-page"} className={classes.link}>
+                    <Button href=""  simple color="danger" size="lg">
                       Get started
                     </Button>
-                    {/* </link> */}
+                    </Link>
                   </CardFooter>
                 </form>
               </Card>

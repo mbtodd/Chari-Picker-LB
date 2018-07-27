@@ -34,7 +34,7 @@ class SectionExamples extends React.Component {
                     classes.imgFluid
                   }
                 />
-                <Button color="danger" size="lg" simple>
+                <Button href="../../views/LandingPage/SectionExamples" color="danger" size="lg" simple>
                   <h3>
                     <small>FIND YOUR CHARITY</small>
                   </h3>

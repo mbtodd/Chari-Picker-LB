@@ -83,7 +83,7 @@ class Components extends React.Component {
           <SectionLoginDB />
           <GridItem md={12} className={classes.textCenter}>
             <Link to={"/login-page"} className={classes.link}>
-              <Button color="default" size="lg" simple>
+              <Button href="../LoginPage/LoginPage.jsx"color="default" size="lg" simple>
                 {/* <h3>
                   <small> PLEASE REGISTER HERE</small>
                 </h3> */}
@@ -92,7 +92,7 @@ class Components extends React.Component {
                     <Small>PLEASE REGISTER HERE</Small>
                   </h2>
                 </div>
-                
+
               </Button>
             </Link>
           </GridItem>

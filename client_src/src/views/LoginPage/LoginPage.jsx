@@ -23,6 +23,7 @@ import loginPageStyle from "assets/jss/material-kit-react/views/loginPage.jsx";
 // import LoginDB from "../../models/LoginDB.js";
 
 import image from "../../assets/img/images/handsup.jpg";
+import { Link } from "react-router-dom";
 
 class LoginPage extends React.Component {
   constructor(props) {
@@ -70,7 +71,7 @@ class LoginPage extends React.Component {
                       <div className={classes.socialLine}>
                         <Button
                           justIcon
-                          href="#pablo"
+                          href="https://twitter.com/Michael60406406"
                           target="_blank"
                           color="transparent"
                           onClick={e => e.preventDefault()}
@@ -79,7 +80,7 @@ class LoginPage extends React.Component {
                         </Button>
                         <Button
                           justIcon
-                          href="#pablo"
+                          href="https://www.facebook.com/michael.todd.9041083"
                           target="_blank"
                           color="transparent"
                           onClick={e => e.preventDefault()}
@@ -88,7 +89,7 @@ class LoginPage extends React.Component {
                         </Button>
                         <Button
                           justIcon
-                          href="#pablo"
+                          href="https://www.facebook.com/michael.todd.9041083"
                           target="_blank"
                           color="transparent"
                           onClick={e => e.preventDefault()}
@@ -148,9 +149,11 @@ class LoginPage extends React.Component {
                       />
                     </CardBody>
                     <CardFooter className={classes.cardFooter}>
-                      <Button simple color="danger" size="lg">
+                      <Link to={"/"} className={classes.footerWhiteFont}>
+                      <Button href="../../views/LandingPage/LandingPage.jsx" simple color="danger" size="lg">
                         Get started
                       </Button>
+                      </Link>
                     </CardFooter>
                   </form>
                 </Card>
