@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
-import SectionLoginDB from './SectionLoginDB'
+// import SectionLoginDB from './SectionLoginDB'
 
 
 class SectionItem extends Component{
@@ -11,9 +11,12 @@ class SectionItem extends Component{
         }
     }
     render() {
-        const { classes } = this.props;
+        // const { classes } = this.props;
         return (
-            <ul>{this.state.item.name}</ul>
+            <li>
+            <Link to={`/charidbs/${this.state.item.id}`}>
+            {this.state.item.user}</Link>
+            </li>
         )
     }
 }
